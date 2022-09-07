@@ -10,7 +10,7 @@ public class Application extends javafx.application.Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("main_view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 657, 304);
+        Scene scene = new Scene(fxmlLoader.load(), 756, 347);
         stage.setTitle("JavaFX CRUD");
         stage.setScene(scene);
         stage.show();

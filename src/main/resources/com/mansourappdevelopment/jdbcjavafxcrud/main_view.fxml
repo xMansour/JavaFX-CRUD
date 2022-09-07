@@ -3,10 +3,10 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="304.0" prefWidth="657.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mansourappdevelopment.jdbcjavafxcrud.controllers.MainController">
-    <Button fx:id="createBtn" layoutX="28.0" layoutY="221.0" mnemonicParsing="false" onAction="#onCreateClicked" text="Create" />
-    <Button fx:id="updateBtn" layoutX="111.0" layoutY="221.0" mnemonicParsing="false" onAction="#onUpdateClicked" text="Update" />
-    <Button fx:id="deleteBtn" layoutX="190.0" layoutY="221.0" mnemonicParsing="false" onAction="#onDeleteClicked" text="Delete" />
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="347.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mansourappdevelopment.jdbcjavafxcrud.controllers.MainController">
+    <Button fx:id="createBtn" layoutX="28.0" layoutY="221.0" mnemonicParsing="false" onAction="#onCreateClicked" prefHeight="25.0" prefWidth="61.0" text="Create" />
+    <Button fx:id="updateBtn" layoutX="179.0" layoutY="221.0" mnemonicParsing="false" onAction="#onUpdateClicked" prefHeight="25.0" prefWidth="61.0" text="Update" />
+    <Button fx:id="deleteBtn" layoutX="28.0" layoutY="262.0" mnemonicParsing="false" onAction="#onDeleteClicked" prefHeight="25.0" prefWidth="61.0" text="Delete" />
     <Label layoutX="28.0" layoutY="39.0" text="ID" />
     <Label layoutX="28.0" layoutY="72.0" text="Title" />
     <Label layoutX="28.0" layoutY="105.0" text="Author" />
@@ -17,15 +17,17 @@
     <TextField fx:id="authorInput" layoutX="92.0" layoutY="101.0" />
     <TextField fx:id="yearInput" layoutX="92.0" layoutY="134.0" />
     <TextField fx:id="pagesInput" layoutX="92.0" layoutY="168.0" />
-    <TableView layoutX="273.0" layoutY="35.0" prefHeight="239.0" prefWidth="374.0">
+    <TableView fx:id="booksTable" layoutX="273.0" layoutY="35.0" prefHeight="301.0" prefWidth="473.0">
         <columns>
-            <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
-            <TableColumn fx:id="titleColumn" prefWidth="75.0" text="Title" />
-            <TableColumn fx:id="authorColumn" prefWidth="75.0" text="Author" />
+            <TableColumn fx:id="idColumn" prefWidth="35.0" text="ID" />
+            <TableColumn fx:id="titleColumn" prefWidth="176.0" text="Title" />
+            <TableColumn fx:id="authorColumn" prefWidth="128.0" text="Author" />
             <TableColumn fx:id="yearColumn" prefWidth="75.0" text="Year" />
-            <TableColumn fx:id="pagesColumn" prefWidth="75.0" text="Pages" />
+            <TableColumn fx:id="pagesColumn" prefWidth="58.0" text="Pages" />
         </columns>
     </TableView>
-    <Button fx:id="commitBtn" onAction="#onCommitClicked" layoutX="28.0" layoutY="262.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="Commit" />
-    <Button fx:id="rollbackBtn" onAction="#onRollbackClicked" layoutX="143.0" layoutY="262.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="RollBack" />
+    <Button fx:id="commitBtn" layoutX="104.0" layoutY="262.0" mnemonicParsing="false" onAction="#onCommitClicked" prefHeight="25.0" prefWidth="61.0" text="Commit" />
+    <Button fx:id="rollbackBtn" layoutX="179.0" layoutY="262.0" mnemonicParsing="false" onAction="#onRollbackClicked" prefHeight="25.0" prefWidth="61.0" text="RollBack" />
+   <Button fx:id="readBtn" layoutX="104.0" layoutY="221.0" mnemonicParsing="false" onAction="#onReadClicked" prefHeight="25.0" prefWidth="61.0" text="Read" />
+   <Button fx:id="truncateBtn" layoutX="29.0" layoutY="301.0" mnemonicParsing="false" onAction="#onTruncateClicked" prefHeight="25.0" prefWidth="212.0" text="Truncate" />
 </Pane>
