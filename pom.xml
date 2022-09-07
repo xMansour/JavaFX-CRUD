@@ -42,6 +42,12 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.30</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -65,7 +71,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.mansourappdevelopment.jdbcjavafxcrud/com.mansourappdevelopment.jdbcjavafxcrud.HelloApplication
+                                com.mansourappdevelopment.jdbcjavafxcrud/com.mansourappdevelopment.jdbcjavafxcrud.Application
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

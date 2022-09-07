@@ -3,11 +3,10 @@ package com.mansourappdevelopment.jdbcjavafxcrud.controllers;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TextField;
 
-public class HelloController {
+public class MainController {
     @FXML
     private TextField idInput;
     @FXML
